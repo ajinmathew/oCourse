@@ -1,18 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#8C7B7B">
 
-    <TextView
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="47">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Course Title"
+                android:textColor="#080808"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="53">
+            <EditText
+                android:textColor="#080808"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="47">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Course Description"
+                android:textColor="#080808"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="53">
+            <EditText
+                android:textColor="#080808"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="47">
+            <TextView
+                android:textColor="#080808"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Course Duration"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="53">
+            <EditText
+                android:textColor="#080808"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="47">
+            <TextView
+                android:textColor="#080808"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Trainer Name"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="53">
+            <EditText
+                android:textColor="#080808"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#2B0C36"
+        android:text="Submit"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
